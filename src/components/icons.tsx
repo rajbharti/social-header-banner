@@ -1,18 +1,16 @@
-import { logoConfig } from "../logo-config";
+import { iconConfig } from "../icon-config";
 
 export default function Icons() {
   return (
-    <div>
-      {logoConfig.map((logoRow, i) => (
+    <div className="text-right">
+      {iconConfig.map((icon, i) => (
         <div key={i.toString()}>
-          {logoRow.map((logo) => (
-            <img
-              key={logo.src}
-              src={logo.src}
-              width={logo.width}
-              className="inline mr-2"
-            />
-          ))}
+          <img
+            key={icon.src}
+            src={icon.src}
+            width={icon.width}
+            className="inline-block mr-2 -mt-1"
+          />
         </div>
       ))}
     </div>
