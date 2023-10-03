@@ -3,15 +3,16 @@ import { iconConfig } from "../icon-config";
 export default function Icons() {
   return (
     <div className="text-right">
-      {iconConfig.map((icon, i) => (
-        <div key={i.toString()}>
+      {iconConfig.map((icon) => (
+        <>
           <img
             key={icon.src}
             src={icon.src}
-            width={icon.width}
-            className="inline-block mr-2 -mt-1"
+            width={icon.width + 20}
+            className="inline mr-2"
           />
-        </div>
+          {icon.lineBreak ? <br /> : null}
+        </>
       ))}
     </div>
   );
