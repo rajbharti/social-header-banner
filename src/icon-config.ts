@@ -4,122 +4,145 @@ interface IconConfig {
   lineBreak?: boolean;
 }
 
+function getImgUrl(url: string) {
+  return new URL(`./assets/icons/${url}`, import.meta.url).href;
+}
+
 export const iconConfig: IconConfig[] = [
   {
-    src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
+    src: getImgUrl("javascript.svg"),
     width: 40,
   },
   {
-    src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg",
+    src: getImgUrl("typescript.svg"),
     width: 40,
   },
   {
-    src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
+    src: getImgUrl("react.svg"),
     width: 40,
   },
   {
-    src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg",
+    src: getImgUrl("redux.svg"),
     width: 40,
   },
-  { src: "https://cdn.worldvectorlogo.com/logos/nextjs-2.svg", width: 70 },
+  { src: getImgUrl("nextjs.svg"), width: 70 },
   {
-    src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
+    src: getImgUrl("aws.svg"),
     width: 80,
   },
   {
-    src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg",
+    src: getImgUrl("nodejs.svg"),
+    width: 90,
+  },
+  {
+    src: getImgUrl("express.svg"),
     width: 70,
   },
   {
-    src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg",
+    src: getImgUrl("mongodb.svg"),
     width: 70,
   },
   {
-    src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg",
+    src: getImgUrl("mysql.svg"),
     width: 70,
   },
   {
-    src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original-wordmark.svg",
+    src: getImgUrl("docker.svg"),
     width: 40,
   },
   {
-    src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg",
-    width: 70,
-    lineBreak: true,
-  },
-  {
-    src: "https://www.vectorlogo.zone/logos/jestjsio/jestjsio-icon.svg",
-    width: 40,
-  },
-  { src: "https://www.chartjs.org/media/logo-title.svg", width: 60 },
-  {
-    src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/d3js/d3js-original.svg",
-    width: 40,
-  },
-  {
-    src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg",
-    width: 40,
-  },
-  {
-    src: "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg",
-    width: 40,
-  },
-
-  {
-    src: "https://raw.githubusercontent.com/devicons/devicon/d00d0969292a6569d45b06d3f350f463a0107b0d/icons/webpack/webpack-original-wordmark.svg",
-    width: 80,
-  },
-  {
-    src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/gulp/gulp-plain.svg",
-    width: 40,
-  },
-  {
-    src: "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg",
-    width: 40,
-  },
-  {
-    src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg",
+    src: getImgUrl("rest-api.svg"),
     width: 40,
     lineBreak: true,
   },
   {
-    src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg",
+    src: getImgUrl("codeium.svg"),
+    width: 100,
+  },
+  {
+    src: getImgUrl("chatgpt.svg"),
     width: 40,
   },
   {
-    src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg",
+    src: getImgUrl("git.svg"),
     width: 40,
   },
   {
-    src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg",
+    src: getImgUrl("jest.svg"),
+    width: 40,
+  },
+  { src: getImgUrl("chartjs.svg"), width: 60 },
+  {
+    src: getImgUrl("d3.svg"),
     width: 40,
   },
   {
-    src: "https://cdn.worldvectorlogo.com/logos/material-ui-1.svg",
+    src: getImgUrl("terraform.svg"),
+    width: 60,
+  },
+  {
+    src: getImgUrl("okta.svg"),
+    width: 80,
+  },
+  {
+    src: getImgUrl("webpack.svg"),
+    width: 100,
+  },
+  {
+    src: getImgUrl("gulp.svg"),
     width: 40,
   },
   {
-    src: "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg",
+    src: getImgUrl("postman.svg"),
     width: 40,
   },
   {
-    src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg",
+    src: getImgUrl("linux.svg"),
+    width: 40,
+    lineBreak: true,
+  },
+  {
+    src: getImgUrl("html5.svg"),
     width: 40,
   },
   {
-    src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg",
+    src: getImgUrl("css3.svg"),
     width: 40,
   },
   {
-    src: "https://www.vectorlogo.zone/logos/invisionapp/invisionapp-icon.svg",
+    src: getImgUrl("sass.svg"),
     width: 40,
   },
   {
-    src: "https://www.vectorlogo.zone/logos/figma/figma-icon.svg",
+    src: getImgUrl("material-ui.svg"),
     width: 40,
   },
   {
-    src: "https://www.vectorlogo.zone/logos/sketchapp/sketchapp-icon.svg",
+    src: getImgUrl("tailwindcss.svg"),
+    width: 40,
+  },
+  {
+    src: getImgUrl("bootstrap.svg"),
+    width: 40,
+  },
+  {
+    src: getImgUrl("invision.svg"),
+    width: 40,
+  },
+  {
+    src: getImgUrl("figma.svg"),
+    width: 40,
+  },
+  {
+    src: getImgUrl("github.svg"),
+    width: 40,
+  },
+  {
+    src: getImgUrl("bitbucket.svg"),
+    width: 40,
+  },
+  {
+    src: getImgUrl("gitlab.svg"),
     width: 40,
   },
 ];
