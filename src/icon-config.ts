@@ -8,47 +8,56 @@ function getImgUrl(url: string) {
   return new URL(`./assets/icons/${url}`, import.meta.url).href;
 }
 
+function getImgUrlFromDevIcons(url: string) {
+  return `https://raw.githubusercontent.com/devicons/devicon/master/icons/${url}`;
+}
+
 export const iconConfig: IconConfig[] = [
   {
-    src: getImgUrl("javascript.svg"),
+    src: getImgUrlFromDevIcons("javascript/javascript-original.svg"),
+    width: 35,
+  },
+  {
+    src: getImgUrlFromDevIcons("typescript/typescript-original.svg"),
+    width: 35,
+  },
+  {
+    src: getImgUrlFromDevIcons("react/react-original.svg"),
     width: 40,
   },
   {
-    src: getImgUrl("typescript.svg"),
-    width: 40,
+    src: getImgUrlFromDevIcons("redux/redux-original.svg"),
+    width: 35,
   },
   {
-    src: getImgUrl("react.svg"),
-    width: 40,
+    src: getImgUrlFromDevIcons("nextjs/nextjs-original-wordmark.svg"),
+    width: 70,
   },
   {
-    src: getImgUrl("redux.svg"),
-    width: 40,
-  },
-  { src: getImgUrl("nextjs.svg"), width: 70 },
-  {
-    src: getImgUrl("aws.svg"),
+    src: getImgUrlFromDevIcons(
+      "amazonwebservices/amazonwebservices-original-wordmark.svg"
+    ),
     width: 80,
   },
   {
-    src: getImgUrl("nodejs.svg"),
+    src: getImgUrlFromDevIcons("nodejs/nodejs-original-wordmark.svg"),
     width: 90,
   },
   {
-    src: getImgUrl("express.svg"),
+    src: getImgUrlFromDevIcons("express/express-original-wordmark.svg"),
     width: 70,
   },
   {
-    src: getImgUrl("mongodb.svg"),
+    src: getImgUrlFromDevIcons("mongodb/mongodb-original-wordmark.svg"),
+    width: 65,
+  },
+  {
+    src: getImgUrlFromDevIcons("mysql/mysql-original-wordmark.svg"),
     width: 70,
   },
   {
-    src: getImgUrl("mysql.svg"),
-    width: 70,
-  },
-  {
-    src: getImgUrl("docker.svg"),
-    width: 40,
+    src: getImgUrlFromDevIcons("docker/docker-original-wordmark.svg"),
+    width: 45,
   },
   {
     src: getImgUrl("rest-api.svg"),
@@ -61,88 +70,88 @@ export const iconConfig: IconConfig[] = [
   },
   {
     src: getImgUrl("chatgpt.svg"),
-    width: 40,
+    width: 35,
   },
   {
-    src: getImgUrl("git.svg"),
-    width: 40,
+    src: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Google_Bard_logo.svg/600px-Google_Bard_logo.svg.png?20230425130013",
+    width: 35,
   },
   {
-    src: getImgUrl("jest.svg"),
-    width: 40,
-  },
-  { src: getImgUrl("chartjs.svg"), width: 60 },
-  {
-    src: getImgUrl("d3.svg"),
-    width: 40,
+    src: getImgUrlFromDevIcons("git/git-original.svg"),
+    width: 35,
   },
   {
-    src: getImgUrl("terraform.svg"),
-    width: 60,
+    src: getImgUrlFromDevIcons("jest/jest-plain.svg"),
+    width: 32,
+  },
+  { src: getImgUrl("chartjs.svg"), width: 65 },
+  {
+    src: getImgUrlFromDevIcons("d3js/d3js-original.svg"),
+    width: 32,
+  },
+  {
+    src: getImgUrlFromDevIcons("terraform/terraform-original.svg"),
+    width: 35,
   },
   {
     src: getImgUrl("okta.svg"),
     width: 80,
   },
   {
-    src: getImgUrl("webpack.svg"),
+    src: getImgUrlFromDevIcons("webpack/webpack-original-wordmark.svg"),
     width: 100,
   },
   {
-    src: getImgUrl("gulp.svg"),
+    src: getImgUrlFromDevIcons("gulp/gulp-plain.svg"),
     width: 40,
   },
   {
-    src: getImgUrl("postman.svg"),
-    width: 40,
-  },
-  {
-    src: getImgUrl("linux.svg"),
+    src: getImgUrlFromDevIcons("linux/linux-original.svg"),
     width: 40,
     lineBreak: true,
   },
   {
-    src: getImgUrl("html5.svg"),
+    src: getImgUrlFromDevIcons("html5/html5-original-wordmark.svg"),
     width: 40,
   },
   {
-    src: getImgUrl("css3.svg"),
+    src: getImgUrlFromDevIcons("css3/css3-original-wordmark.svg"),
     width: 40,
   },
   {
-    src: getImgUrl("sass.svg"),
+    src: getImgUrlFromDevIcons("sass/sass-original.svg"),
     width: 40,
   },
   {
-    src: getImgUrl("material-ui.svg"),
+    src: getImgUrlFromDevIcons("materialui/materialui-original.svg"),
     width: 40,
   },
   {
-    src: getImgUrl("tailwindcss.svg"),
+    src: getImgUrlFromDevIcons("tailwindcss/tailwindcss-plain.svg"),
     width: 40,
   },
   {
-    src: getImgUrl("bootstrap.svg"),
+    src: getImgUrlFromDevIcons("bootstrap/bootstrap-original.svg"),
     width: 40,
   },
   {
     src: getImgUrl("invision.svg"),
+    width: 35,
+  },
+  {
+    src: getImgUrlFromDevIcons("figma/figma-original.svg"),
+    width: 35,
+  },
+  {
+    src: getImgUrlFromDevIcons("github/github-original-wordmark.svg"),
     width: 40,
   },
   {
-    src: getImgUrl("figma.svg"),
+    src: getImgUrlFromDevIcons("bitbucket/bitbucket-original-wordmark.svg"),
     width: 40,
   },
   {
-    src: getImgUrl("github.svg"),
-    width: 40,
-  },
-  {
-    src: getImgUrl("bitbucket.svg"),
-    width: 40,
-  },
-  {
-    src: getImgUrl("gitlab.svg"),
+    src: getImgUrlFromDevIcons("gitlab/gitlab-original-wordmark.svg"),
     width: 40,
   },
 ];
