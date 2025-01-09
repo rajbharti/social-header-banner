@@ -17,7 +17,7 @@ export default function Title({ size }: TitleProps) {
       <h1 className={clsx(titleSize, "font-bold text-blue-800")}>
         RAJ KUMAR BHARTI
       </h1>
-      <h2 className="text-xl text-blue-700">Full Stack Web Developer</h2>
+      <h2 className="text-xl text-blue-700">Full Stack Engineer</h2>
     </>
   );
 }
